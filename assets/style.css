@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+
+
+.dashboard{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* ------------------- */
+/* -------nav-------- */
+
+.dashboard .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dashboard .navigation img.logo, .dashboard .navigation img.user {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.dashboard .navigation div{
+    margin-top: 10px;
+}
+
+.dashboard .navigation div .material-icons-round{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #727272;
+}
+
+
+/* ==========================*/
+/* -----Main dashboard----- */
+/* ======================== */
+/* search */
+
+.dashboard .main .search form {
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba(0 0 0 /0);
+}
+
+.dashboard .main .search form span {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #727272;
+}
+
+.dashboard .main .search .notification {
+    margin-top: 20px;
+
+}
+.dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;
+}
+
+/* Project Title */
+
+.dashboard .main .title{
+    margin-bottom: 30px;
+}
+.dashboard .main h1 {
+    font-size: 35px;
+    line-height: 0px;
+}
+
+.dashboard .main form {
+    margin-top: 40px;
+}
+
+.dashboard .main form label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+}
+.dashboard .main form select {
+    border: none;
+    font-size: 16px;
+    background-color: rgba(0 0 0 /0);
+}
+
+/* Project List */
+.dashboard .main .project-list .project h2{
+ font-size: 20px;
+ line-height: 0;
+
+}
+.dashboard .main .project-list .project p {
+    color: #727272;
+}
+
+.dashboard .main .project-list .project ul {
+    list-style: none;
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.dashboard .main .project-list .project ul li {
+    position: relative;
+    color: #727272;
+    margin-left: 15px;
+}
+
+.dashboard .main .project-list .project ul li::before{
+    content: "\268A";
+    position: absolute;
+    left: -15px;
+    top: -5px;
+}
+
+.dashboard .main .project-list .project .meta .contributers img{
+     height: 50px;
+     width: 50px;
+     border-radius: 40px;
+     border: 4px solid aliceblue;
+}
+
+
+.dashboard .main .project-list .project .meta .contributers img.stack{
+    margin-left: -20px;
+}
+
+.dashboard .main .project-list .project .meta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.dashboard .main .project-list .project{
+    padding: 20px 20px 20px 60px;
+    background-color: #fff;
+    box-shadow:  1px 1px  40px rgba(0 0 0 / .1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.dashboard .main .project-list .category {
+    width: 30px;
+    height: 50px;
+    background-color: rebeccapurple;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    left: 0;
+}
+
+.category-color1{
+    background-color: rebeccapurple !important;
+}
+.category-color2{
+    background-color: tan !important;
+}
+.category-color3{
+    background-color: sandybrown !important;
+}
+.category-color4{
+    background-color: lightcyan !important;
+}
+
+/* =========================== */
+/* ===Secondary Stastics=== */
+/* ========================= */
+/* chart */
+
+.dashboard .secondary .chart{
+    background-color: #fff;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.dashboard .secondary .chart .complete {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dashboard .secondary .chart .complete h3{
+    line-height: 0px;
+}
+.dashboard .secondary .chart .complete p{
+ color: #727272;
+}
+
+/* Recent Project */
+.dashboard .secondary .recent-project .listing h2{
+line-height: 0px;
+}
+.dashboard .secondary .recent-project .listing p{
+color: #727272;
+}
+.dashboard .secondary .recent-project .listing {
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .secondary .recent-project {
+    background-color: #fff;
+    padding: 15px 15px 15px 60px;
+    position: relative;
+}
+.dashboard .secondary .recent-project .category{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* =========================== */
+/* media query 768px*/
+/* ========================= */
+
+@media only screen and (min-width:768px){
+    section.main .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section.main .project-list .project{
+        width: 47%;
+    }
+    section.main .project-list .project span{
+      margin-top: 15px;
+    }
+
+    /* recent projects */
+
+    section.secondary{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #fff;
+        height: 100vh;
+    }
+
+    section.secondary .chart{
+        width: 40%;
+        height: 65vh;
+    }
+    section.secondary .recent-project{
+        width: 55%;
+        height: 45vh;
+    }
+
+
+ section.secondary .recent-project .listing span {
+     margin-top: 15px;
+ }
+
+
+
+}
+/* ================== */
+/* screen 1024px */
+
+@media only screen and (min-width:1024px){
+     .dashboard .navigation,
+     .dashboard .navigation div span,
+     section.secondary{
+         display: block;
+     }
+
+     .dashboard .navigation{
+         width: 60px;
+         position: fixed;
+         z-index: 15;
+     }
+
+     section.main{
+         width: 60%;
+         margin-left: 90px;
+         margin-right: 20px;
+     }
+
+     section.secondary{
+         width: 27%;
+         padding-top: 0px;
+         position: fixed;
+         top: 10px;
+         right: 0px;
+         background-color: transparent;
+         
+     }
+     section.secondary .chart,
+     section.secondary .recent-project{
+         width: 100%;
+         border-radius: 10px;
+     }
+
+     .dashboard .navigation div {
+         margin-top: 19vh;
+         margin-bottom: 19vh;
+
+     }
+     .dashboard .navigation div span {
+         margin-top: 5vh;
+     }
+}
+
+@media only screen and (min-width:1111px){
+
+    section.main .project-list .project{
+        width: 32%;
+    }
+
+    section.main{
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width:1500px){
+    section.secondary .recent-project .listing:nth-child(4){
+        display:none;
+    }
+
+}
